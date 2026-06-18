@@ -25,7 +25,7 @@ I am still learning so the code might not be perfect but it works completely off
 
 You can download and install the APK file directly from this link :
 
-👉 **[Download Calculator APK](https://github.com)**
+👉 **[Download Calculator APK](https://github.com/krrishsaini708/SCT_AD_1/releases/download/v1.0/app-debug.apk)**
 
 > Note: Your phone might show a security warning since this app is not on the Play Store.
 > Just tap "More Details" and then "Install Anyway" to proceed.
