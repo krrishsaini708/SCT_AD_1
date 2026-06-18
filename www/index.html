@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- linking my css file here so the page looks nice -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator">
+
+        <!-- this is the screen part where the numbers show up -->
+        <div class="display">
+            <div class="expression" id="expression">0</div>
+            <div class="result" id="result"></div>
+        </div>
+
+        <!-- all the buttons are here in a 4 column grid -->
+        <div class="buttons">
+
+            <button class="btn clear"    onclick="clearAll()">C</button>
+            <button class="btn clear"    onclick="deleteLast()">⌫</button>
+            <button class="btn operator" onclick="appendChar('%')">%</button>
+            <button class="btn operator" onclick="appendChar('/')">÷</button>
+
+            <button class="btn number" onclick="appendChar('7')">7</button>
+            <button class="btn number" onclick="appendChar('8')">8</button>
+            <button class="btn number" onclick="appendChar('9')">9</button>
+            <button class="btn operator" onclick="appendChar('*')">×</button>
+
+            <button class="btn number" onclick="appendChar('4')">4</button>
+            <button class="btn number" onclick="appendChar('5')">5</button>
+            <button class="btn number" onclick="appendChar('6')">6</button>
+            <button class="btn operator" onclick="appendChar('-')">−</button>
+
+            <button class="btn number" onclick="appendChar('1')">1</button>
+            <button class="btn number" onclick="appendChar('2')">2</button>
+            <button class="btn number" onclick="appendChar('3')">3</button>
+            <button class="btn operator" onclick="appendChar('+')">+</button>
+
+            <button class="btn number" onclick="appendChar('0')">0</button>
+            <button class="btn number" onclick="appendChar('.')">.</button>
+            <button class="btn equals" onclick="calculate()">=</button>
+
+        </div>
+    </div>
+
+    <!-- linking my separate javascript file -->
+    <script src="calculator.js"></script>
+
+</body>
+</html>
