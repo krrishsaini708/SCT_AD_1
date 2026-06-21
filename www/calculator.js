@@ -1,13 +1,9 @@
-// Project 1 - Calculator
-// I made this logic file in javascript so it can work without python/flask
-// this way I can also convert it to android app later using react native or similar
-// my senior told me to separate logic into its own js file so I did that
-
-// this variable stores whatever the user is typing like "5+3" or "10*2"
+//  Calculator
+// this variable stores whatever the user is typing like "5+3" "
 let expression = ""
 
 // this is true when the user just pressed equals
-// I need this so if they type a new number after = it starts fresh
+// if they type a new number after = it starts fresh
 let justCalculated = false
 
 
@@ -15,14 +11,12 @@ let justCalculated = false
 function appendChar(char) {
 
     // if the user just got a result and now types a number, clear everything
-    // for example if result was 10 and they press 5, start fresh with 5
     if (justCalculated && !isNaN(char)) {
         expression = ""
         justCalculated = false
     }
 
     // if they press an operator after result, continue from the result
-    // like if result was 10 and they press + then expression becomes "10+"
     if (justCalculated && isNaN(char)) {
         justCalculated = false
     }
@@ -63,7 +57,6 @@ function calculate() {
 
     try {
         // I replace the symbols with proper js math operators before calculating
-        // because I show ÷ and × on screen but js only understands / and *
         let mathExpression = expression
             .replace(/÷/g, "/")
             .replace(/×/g, "*")
@@ -109,7 +102,6 @@ function updateDisplay() {
 
 
 // I also added keyboard support so user can type with keyboard too
-// my teacher showed me how to do this with event listeners
 document.addEventListener("keydown", function(event) {
 
     let key = event.key
